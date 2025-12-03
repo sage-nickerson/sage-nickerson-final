@@ -1,0 +1,315 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root{
+    /* colors */
+    --white: #ffffff;
+    --off-white: #eeeeee;
+    --lt-blue: #90afc5;
+    --dk-blue: #336b87;
+    --blk-blue: #283132;
+    --brown: #763626;
+    --dk-black: #292727;
+
+    /* fonts */
+    --font: "numans", sans-serif;
+    --base-font-size: 16px;
+}
+
+body{
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    background: #EEEEEE;
+    background: linear-gradient(360deg,rgba(238, 238, 238, 1) 51%, rgba(118, 54, 38, 1) 56%);
+    font-family: var(--font);
+}
+
+header{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    width: 100%;
+    background-color: var(--blk-blue);
+}
+
+h1{
+    padding: 20px 30px 0 30px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+h1 > a{
+    color: var(--off-white);
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+nav{
+    padding: 25px 30px 0 30px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+nav > ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+li > a{
+    color: var(--off-white);
+    font-size: 25px;
+    text-decoration: none;
+}
+
+li > a:hover{
+    color: var(--lt-blue);
+    text-decoration: underline;
+}
+
+header > img{
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+
+#home-pg main{
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section.top{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 0 30px 0;
+    background-color: var(--brown);
+}
+
+section.top > h2{
+    color: var(--off-white);
+    font-weight: bold;
+    font-size: xx-large;
+    text-align: center;
+}
+
+section.top > p{
+    color: var(--off-white);
+    text-align: center;
+    padding-top: 30px;
+    width: 80%;
+    margin: 0 auto;
+    font-family: sans-serif;
+    font-size: large;
+}
+
+section.summer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    margin: 70px auto 0 auto;
+    width: 80%;
+    padding-top: 50px;
+}
+
+section.summer > img{
+    grid-column: 1/2;
+    grid-row: 1/4;
+    padding: 50px 0;
+}
+
+section.summer > h3{
+    grid-column: 2/3;
+    grid-row: 1/-1;
+    gap: 10px;
+    justify-content: center;
+    padding: 50px 0;
+    font-weight: bold;
+    font-size: xx-large;
+    text-align: center;
+}
+
+section.summer > p{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-family: sans-serif;
+    font-size: larger;
+    color: black;
+    padding-left: 20px;
+    padding-top: 30px;
+    text-align: left;
+    margin-top: 50px;
+}
+
+section.winter{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    margin: 0 auto;
+    width: 80%;
+}
+
+section.winter > img{
+    grid-column: 1/2;
+    grid-row: 1/4;
+    padding: 50px 0;
+}
+
+
+section.winter > h3{
+    grid-column: 2/3;
+    grid-row: 1/-1;
+    gap: 10px;
+    justify-content: center;
+    padding: 70px 0;
+    font-weight: bold;
+    font-size: xx-large;
+    text-align: center;
+}
+
+section.winter > p{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-family: sans-serif;
+    font-size: larger;
+    color: black;
+    padding-left: 20px;
+    padding-top: 10px;
+    text-align: left;
+    margin-top: 40px;
+}
+
+footer{
+    background-color: var(--blk-blue);
+    margin: 0 auto;
+    width: 100%;
+    padding: 30px 0 10px 0;
+}
+
+footer > p{
+    color: var(--lt-blue);
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#contact-pg main{
+    padding: 0;
+    margin: 0 auto;
+}
+
+div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#contact-pg h2, #contact-pg p{
+    background-color: var(--off-white);
+    grid-column: 1/2;
+    grid-row: 1/1;
+}
+
+#contact-pg h2{
+    text-align: center;
+    font-family: var(--font);
+    font-weight: bold;
+    font-size: 35px;
+    justify-content: left;
+    padding: 30px 40px 20px 90px;
+    
+}
+
+#contact-pg p{
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 20px;
+    justify-content: left;
+    padding: 30px 50px 0 90px;
+    margin: 70px 50px 50px 90px;
+    border-bottom: 5px solid var(--brown);
+}
+
+#contact-pg form{
+    background-color: var(--off-white);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-content: space-around;
+    padding: 20px;
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+
+#contact-pg label:hover{
+    color: var(--dk-blue);
+}
+
+#contact-pg fieldset{
+    border: 2px var(--brown) solid;
+    padding: 10px;
+}
+
+#contact-pg input[type="submit"]{
+    background-color: var(--brown);
+    color: var(--off-white);
+    font-size: larger;
+    padding: 20px 5px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+#contact-pg img{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin: 5px 0 0 40px;
+    border: 5px solid var(--brown);
+    
+}
+

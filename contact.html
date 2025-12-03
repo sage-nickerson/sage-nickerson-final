@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="sage nickerson">
+        <meta name="description" content="contact page for mountain climbers resort">
+
+        <title>Mountain Climbers Resort|Contact</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Limelight&family=Manrope:wght@200..800&family=Numans&family=Rubik+Dirt&family=Seymour+One&family=VT323&display=swap" rel="stylesheet">
+        <link rel="icon" href="images/pine-favicon.png" type="image/png">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <header>
+            <h1><a href="index.html">Mountain Climbers Resort</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Accommodations</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <img src="images/swiss-valley.jpg" alt="picture of a snowy mountain range behind a green valley" width="1440" height="560">    
+        </header>
+
+        <main id="contact-pg">
+            <div>
+            <h2>Contact Us</h2>
+            
+            <p>Please reach out to us with any questions or concerns. We are happy to help you plan your dream vacation with us!</p>
+
+            
+            <img src="images/swiss-sunset.jpg" alt="picture of a lake surrounded by trees and log cabins during a sunset" width="710" height="270">
+           
+            <form action="https://wp.zybooks.com/form-viewer.php" method="post">
+                <label for="full_name">Name*</label>
+                <input type="text" id="full_name" name="full_name" required>
+
+                <label for="e_mail">Email*</label>
+                <input type="text" id="e_mail" name="e_mail" required>
+
+                <label for="phone_number">Phone Number*</label>
+                <input type="tel" id="phone_number" name="phone_number" required>
+
+                <fieldset>
+                    <legend>Preferred Contact Method*</legend>
+                <label for="phone_num_op">Phone Number</label>
+                <input type="radio" id="phone_num_op" name="contact_method" required>
+
+                <label for="e_mail_op">Email</label>
+                <input type="radio" id="e_mail_op" name="contact_method" required>
+                </fieldset>
+
+                <label for="user_comment">Comments*</label>
+                <textarea name="user_comment" id="user_comment" cols="30" rows="10" required></textarea>
+
+                <input type="submit" value="submit">
+            </form>
+            </div>
+        </main>
+
+        <footer>
+            <p>Copyright &copy;2023 - Mountain Climbers Resort</p>
+            <p>This site is for educational purposes only</p>
+        </footer>
+    </body>
+</html>
